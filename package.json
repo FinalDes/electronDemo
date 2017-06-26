@@ -1,0 +1,13 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Alex Alonso",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "1.6.11"
+  }
+}
