@@ -5,9 +5,11 @@
   "author": "Alex Alonso",
   "license": "MIT",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "tsc index.ts"
   },
   "devDependencies": {
-    "electron": "1.6.11"
+    "electron": "1.6.11",
+    "typescript": "^2.3.4"
   }
 }
