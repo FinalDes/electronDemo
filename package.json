@@ -7,11 +7,14 @@
   "scripts": {
     "start": "electron .",
     "build": "tsc",
+    "build2": "webpack webpack.config.js",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "devDependencies": {
     "electron": "1.6.11",
+    "ts-loader": "^2.2.0",
     "tslint": "^5.4.3",
-    "typescript": "^2.3.4"
+    "typescript": "^2.3.4",
+    "webpack": "^3.0.0"
   }
 }
