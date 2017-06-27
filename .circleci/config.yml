@@ -5,7 +5,11 @@ jobs:
     docker:
       - image: circleci/node:6.10.3
     steps:
-      - run:
-        name: install-yarn
-        command: sudo npm install -g yarn
       - checkout
+      - run:
+          name: install-yarn
+          command: sudo npm install -g yarn
+      - run:
+          name: install-packages
+          command: yarn
+      
