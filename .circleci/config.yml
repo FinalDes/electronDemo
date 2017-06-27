@@ -12,4 +12,7 @@ jobs:
       - run:
           name: install-packages
           command: yarn
+      - run:
+          name: run tslint
+          command: yarn lint
       
