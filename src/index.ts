@@ -1,10 +1,10 @@
-import {app,BrowserWindow} from 'electron'
+import {app, BrowserWindow} from "electron";
 let win = null;
 
-app.on('ready',()=>{
+app.on("ready", () => {
     win  = new BrowserWindow({
-        width:800,
-        height:600,
-        backgroundColor:'#FFFFFF'
-    })
-})
+        backgroundColor: "#FFFFFF",
+        height: 600,
+        width: 800,
+    });
+});

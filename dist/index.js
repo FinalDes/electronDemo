@@ -2,11 +2,11 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var electron_1 = require("electron");
 var win = null;
-electron_1.app.on('ready', function () {
+electron_1.app.on("ready", function () {
     win = new electron_1.BrowserWindow({
-        width: 800,
+        backgroundColor: "#FFFFFF",
         height: 600,
-        backgroundColor: '#FFFFFF'
+        width: 800,
     });
 });
 //# sourceMappingURL=index.js.map

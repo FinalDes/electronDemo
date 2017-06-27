@@ -6,10 +6,12 @@
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "build": "tsc"
+    "build": "tsc",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'"
   },
   "devDependencies": {
     "electron": "1.6.11",
+    "tslint": "^5.4.3",
     "typescript": "^2.3.4"
   }
 }
