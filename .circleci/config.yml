@@ -1,0 +1,2 @@
+version: 2
+image: circleci/node:6.10.3
