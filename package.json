@@ -7,6 +7,7 @@
   "scripts": {
     "start": "electron .",
     "build": "del-cli dist && webpack --config webpack.config.common.js --progress --profile --bail",
+    "build:prod": "del-cli dist && webpack --config webpack.config.prod.js --progress --profile --bail",
     "lint": "tslint 'src/**/*.ts'"
   },
   "devDependencies": {
@@ -17,5 +18,8 @@
     "tslint-loader": "^3.5.3",
     "typescript": "^2.3.4",
     "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "webpack-merge": "^4.1.0"
   }
 }
