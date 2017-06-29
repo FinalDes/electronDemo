@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "build": "del-cli dist && webpack --config webpack.config.common.js --progress --profile --bail",
+    "build": "del-cli dist && webpack --config webpack.config.dev.js --progress --profile --bail",
     "build:prod": "del-cli dist && webpack --config webpack.config.prod.js --progress --profile --bail",
     "lint": "tslint 'src/**/*.ts'"
   },
