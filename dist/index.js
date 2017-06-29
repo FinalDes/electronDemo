@@ -67,18 +67,10 @@
 /* 0 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1);
-module.exports = __webpack_require__(3);
-
-
-/***/ }),
-/* 1 */
-/***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-var electron_1 = __webpack_require__(2);
+var electron_1 = __webpack_require__(1);
 var win = null;
 electron_1.app.on("ready", function () {
     win = new electron_1.BrowserWindow({
@@ -90,41 +82,10 @@ electron_1.app.on("ready", function () {
 
 
 /***/ }),
-/* 2 */
+/* 1 */
 /***/ (function(module, exports) {
 
 module.exports = require("electron");
-
-/***/ }),
-/* 3 */
-/***/ (function(module, exports, __webpack_require__) {
-
-/* WEBPACK VAR INJECTION */(function(__dirname) {var path = __webpack_require__(4);
-
-module.exports = {
-  target: 'electron',
-  entry: './src/index.ts',
-  output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'dist')
-  },
-  module: {
-    rules:[
-      { 
-        test: /\.tsx?$/,
-        loader: 'ts-loader',
-      }
-    ]
-  }
-}
-
-/* WEBPACK VAR INJECTION */}.call(exports, "/"))
-
-/***/ }),
-/* 4 */
-/***/ (function(module, exports) {
-
-module.exports = require("path");
 
 /***/ })
 /******/ ]);

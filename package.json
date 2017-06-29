@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "build": "del-cli dist && webpack webpack.config.js",
+    "build": "del-cli dist && webpack --config webpack.config.common.js --progress --profile --bail",
     "lint": "tslint 'src/**/*.ts'"
   },
   "devDependencies": {
@@ -14,6 +14,7 @@
     "electron": "1.6.11",
     "ts-loader": "^2.2.0",
     "tslint": "^5.4.3",
+    "tslint-loader": "^3.5.3",
     "typescript": "^2.3.4",
     "webpack": "^3.0.0"
   }
