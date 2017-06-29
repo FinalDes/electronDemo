@@ -6,11 +6,11 @@
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "build": "tsc",
-    "build2": "webpack webpack.config.js",
-    "lint": "tslint -c tslint.json 'src/**/*.ts'"
+    "build": "del-cli dist && webpack webpack.config.js",
+    "lint": "tslint 'src/**/*.ts'"
   },
   "devDependencies": {
+    "del-cli": "^1.1.0",
     "electron": "1.6.11",
     "ts-loader": "^2.2.0",
     "tslint": "^5.4.3",
