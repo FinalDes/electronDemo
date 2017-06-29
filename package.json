@@ -6,12 +6,20 @@
   "license": "MIT",
   "scripts": {
     "start": "electron .",
-    "build": "tsc",
-    "lint": "tslint -c tslint.json 'src/**/*.ts'"
+    "build": "del-cli dist && webpack --config webpack.config.dev.js --progress --profile --bail",
+    "build:prod": "del-cli dist && webpack --config webpack.config.prod.js --progress --profile --bail",
+    "lint": "tslint 'src/**/*.ts'"
   },
   "devDependencies": {
+    "del-cli": "^1.1.0",
     "electron": "1.6.11",
+    "ts-loader": "^2.2.0",
     "tslint": "^5.4.3",
-    "typescript": "^2.3.4"
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.3.4",
+    "webpack": "^3.0.0"
+  },
+  "dependencies": {
+    "webpack-merge": "^4.1.0"
   }
 }
